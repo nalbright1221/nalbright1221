@@ -1,0 +1,771 @@
+/* Page Header*/
+
+header {
+    width: 100%;
+    background-color: white;
+    display: block;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.nav-left {
+    font-size: 20px;
+    float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: white;
+    background-color: #4aaaa5;
+    padding: 35px 25px 15px 25px;
+    margin: 0 auto;
+    margin-left: -70px;
+    height: 50px;
+
+
+}
+
+.nav-right {
+    float: right;
+    padding: 40px;
+    margin: 0 auto;
+    margin-right: -125px;
+}
+
+.nav-block {
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    color: grey;
+    display: block;
+
+}
+
+a {
+
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    display: inline;
+    padding: 25px;
+    text-decoration: none;
+}
+
+/* Bio Info*/
+
+.aboutme-content {
+    width: 960px;
+    height: 500px;
+    display: block;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 70px;
+    align-content: center;
+    overflow: auto;
+
+}
+
+
+
+body {
+    background-image: url("../images/full-bloom.png");
+    background-image: repeat;
+    padding: 0;
+    background-color: #ffff;
+    border-color: #dddddd;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 30px;
+    overflow: auto;
+}
+
+
+
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    border-bottom: solid 1px;
+    border-color: grey;
+    padding: 10px;
+}
+
+
+img {
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+
+}
+
+p {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 800px;
+    border: 25px;
+    margin: 25px;
+}
+
+
+footer {
+    background-color: #666666;
+    border-top: solid 10px;
+    border-color: #4aaaa5;
+    color: white;
+    width: 100%;
+    height: 50px;
+    display: block;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+}
+
+
+
+/* contact page*/
+
+.contact-info {
+    align-content: center;
+    width: 960px;
+    height: 600px;
+    padding: 70px;
+    margin: 50px auto;
+    display: block;
+    background: white;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+}
+
+.column {
+    width: 960px;
+    color: grey;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+#fname,
+#lname,
+#message {
+    width: 900px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
+/* Portfolio Page*/
+
+.port-gallery {
+    align-content: center;
+    margin: 80px;
+    margin-left: 200px;
+}
+
+.portfolio-content {
+
+    align-content: center;
+    width: 960px;
+    border: 25px;
+    padding: 70px;
+    margin: 200px auto;
+    display: block;
+    background: white;
+    height: 1000px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    m
+}
+
+
+.container {
+    position: ;
+    width: 50%;
+    float: left;
+
+
+}
+
+
+.port-image {
+    margin: 0 auto;
+    padding: 0px;
+    float: left;
+    margin-bottom: 40px;
+}
+
+
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.text-block {
+    margin-top: 50px;
+    position: absolute;
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+    padding: 5px;
+    width: 190px;
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h3 {
+    text-align: center;
+    width: 200px;
+}
+
+/*/////// Media Querie 980 px */
+
+
+@media only screen and (max-width: 980px) {
+
+    header {
+        width: 980px;
+    }
+
+    .nav-left {
+        float: left;
+        height: 15px;
+        margin: 0;
+        margin-left: 40px;
+        text-align: center;
+        height: 50px;
+    }
+
+    .nav-right {
+        float: right;
+        padding-top: 30px;
+        background-color: white;
+        text-align: center;
+        margin-right: 40px;
+
+    }
+
+    .aboutme-content {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: 40px;
+        width: 550px;
+        padding: 0px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    img {
+        float: left;
+        margin: 20px;
+        width: 200px;
+        margin-left: 40px;
+        width: 200px;
+        height: 200px;
+    }
+
+
+    p {
+        width: 450px;
+        overflow: visible;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* Contact Info*/
+
+
+    h2 {
+        margin-left: 40px;
+        margin-top: 40px;
+        width: 410px;
+        padding: 0;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .contact-info {
+
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: 40px;
+        width: 550px;
+        padding: 0px;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .column {
+        width: 200px;
+    }
+
+
+    #fname,
+    #lname,
+    #message {
+        width: 400px;
+        padding: 10px;
+        margin: 10px auto;
+        border: .5px solid grey;
+    }
+
+    .text-boxes {
+        margin: 0 auto;
+        margin-left: 40px;
+        width: 400px;
+        border-color: grey;
+        line-height: 20px;
+    }
+
+    /* Portfolio Content*/
+
+    .portfolio-content {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: 40px;
+        width: 550px;
+        padding: 0;
+        overflow: hidden;
+        height: 800px;
+        align-content: center;
+    }
+
+    .port-gallery {
+        margin: 0;
+        align-content: center;
+    }
+
+    .container {
+        float: left;
+        width: 30%;
+        margin-left: 60px;
+        align-content: center;
+    }
+
+    .text-block {
+        margin-top: 50px;
+    }
+}
+
+/*/////// Media Querie 768 px */
+
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        width: 768px;
+    }
+
+    .nav-left {
+        float: left;
+        height: 15px;
+        margin: 0;
+        text-align: center;
+        height: 50px;
+    }
+
+    .nav-right {
+        float: none;
+        padding-top: 30px;
+        background-color: white;
+        text-align: center;
+        margin-right: -20px;
+
+    }
+
+    .aboutme-content {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 600px;
+        padding: 20px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    img {
+        float: left;
+        margin: 20px;
+        width: 200px;
+        margin-left: 40px;
+        width: 200px;
+        height: 200px;
+    }
+
+
+    p {
+        width: 520px;
+        overflow: visible;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* Contact Info*/
+
+
+    h2 {
+        margin-left: 40px;
+        margin-top: 40px;
+        width: 410px;
+        padding: 0;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .contact-info {
+
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 650px;
+        padding: 0px;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .column {
+        width: 200px;
+    }
+
+
+    #fname,
+    #lname,
+    #message {
+        width: 500px;
+        padding: 10px;
+        margin: 10px auto;
+        border: .5px solid grey;
+    }
+
+    .text-boxes {
+        margin: 0 auto;
+        margin-left: 40px;
+        width: 400px;
+        border-color: grey;
+        line-height: 20px;
+    }
+
+    /* Portfolio Content*/
+
+    .portfolio-content {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 650px;
+        padding: 0;
+        overflow: hidden;
+        height: 1000px;
+        align-content: center;
+    }
+
+    .port-gallery {
+        margin: 60px;
+        align-content: center;
+    }
+
+    .container {
+        float: left;
+        width: 30%;
+        margin-left: 60px;
+        align-content: center;
+    }
+
+    .text-block {
+        margin-top: 50px;
+    }
+}
+
+
+/* Media Queries 640*************************************************/
+
+@media only screen and (max-width: 640px) {
+
+    /* About me */
+    header {
+        height: 0px;
+    }
+
+    .nav-left {
+        float: none;
+        padding: 25px 20px 0px 0px;
+        height: 15px;
+        margin-left: -100px;
+        width: 640px;
+        text-align: center;
+        height: 50px;
+    }
+
+    .nav-right {
+        float: none;
+        margin: 0;
+        padding: 5px;
+        background-color: white;
+        width: 660px;
+        text-align: center;
+    }
+
+    .nav-block {
+        width: 100%;
+    }
+
+
+    .aboutme-content {
+        margin: 0;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 200px;
+        padding: 100px;
+        height: 300px;
+        overflow: hidden;
+
+    }
+
+    h2 {
+        margin-top: -80px;
+        margin-left: -60px;
+        width: 300px;
+        padding: 0;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    img {
+        float: none;
+        margin: 0 auto;
+        width: 200px;
+        margin-left: -60px;
+        width: 200px;
+        height: 200px;
+    }
+
+    p {
+        width: 300px;
+        border: 0;
+        margin: 0 auto;
+        margin-left: -60px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+
+    /* Contact page*/
+
+
+    .contact-info {
+        margin: 0;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 200px;
+        padding: 100px;
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .column {
+        width: 200px;
+
+    }
+
+    #fname,
+    #lname,
+    #message {
+        width: 300px;
+        padding: 10px;
+        margin: 10px auto;
+        border: .5px solid grey;
+    }
+
+    .text-boxes {
+        margin: 0 auto;
+        margin-left: -60px;
+        width: 300px;
+        border-color: grey;
+        line-height: 20px;
+    }
+
+    /*Portfolio*/
+
+    .portfolio-content {
+        margin: 0;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 200px;
+        padding: 100px;
+        overflow: hidden;
+        height: 1300px;
+    }
+
+    .port-gallery {
+        margin: 0;
+        align-content: center;
+    }
+
+    .container {
+        float: none;
+    }
+
+    .text-block {
+        margin-top: 50px;
+    }
+}
+
+
+/*Media Queries 425px*************************/
+
+@media only screen and (max-width: 425px) {
+
+    /* About me */
+    header {
+        height: 0px;
+    }
+
+    .nav-left {
+        margin-left: 0;
+        float: none;
+        padding: 25px 20px 0px 0px;
+        height: 15px;
+        width: 425px;
+        text-align: center;
+        height: 50px;
+    }
+
+    .nav-right {
+        float: none;
+        margin: 0;
+        padding: 5px;
+        background-color: white;
+        width: 425px;
+        text-align: center;
+    }
+
+    .nav-block {
+        width: 100%;
+    }
+
+
+    .aboutme-content {
+        margin: 0;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        margin-left: 20px;
+        width: 150px;
+        padding: 100px;
+        height: 300px;
+        overflow: hidden;
+
+    }
+
+    h2 {
+        margin-top: -80px;
+        margin-left: -60px;
+        width: 300px;
+        padding: 0;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    img {
+        float: none;
+        margin: 0 auto;
+        width: 200px;
+        margin-left: -60px;
+        width: 200px;
+        height: 200px;
+    }
+
+    p {
+        float: left;
+        width: 250px;
+        border: 0;
+        margin: 0 auto;
+        margin-left: -70px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+
+    /* Contact page*/
+
+
+    .contact-info {
+        margin: 0px 20px 0px 20px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 150px;
+        padding: 100px;
+        height: 420px;
+        overflow: hidden;
+    }
+
+    .column {
+        width: 200px;
+
+    }
+
+    #fname,
+    #lname,
+    #message {
+        width: 250px;
+        padding: 10px;
+        margin: 10px auto;
+        border: .5px solid grey;
+    }
+
+    .text-boxes {
+        margin: 0 auto;
+        margin-left: -60px;
+        width: 300px;
+        border-color: grey;
+        line-height: 20px;
+    }
+
+    /*Portfolio*/
+
+    .portfolio-content {
+        float: left;
+        margin: 0px 20px 0px 20px;
+
+        margin-top: 150px;
+        margin-bottom: 150px;
+        width: 150px;
+        padding: 100px;
+        overflow: hidden;
+        height: 1400px;
+    }
+
+    .port-image {
+        float: none;
+        margin-right: 25px;
+    }
+
+    .port-gallery {
+        margin: -80px;
+        margin-top: 40px;
+        align-content: center;
+    }
+
+    .container {
+        float: none;
+    }
+
+    .text-block {
+        margin-top: 50px;
+    }
+}
