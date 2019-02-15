@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangover Man</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Hang(over) Man</h1>
+            <h2> Guess that cocktail!</h2>
+            <button id="button" type="button">Click here to guess your drink</button>
+        </header>
+    </div>
+
+    <div class="wrapper">
+        <!--- guesses let -->
+        <div class="content">
+            <h3>You've guessed </h3>
+            <p id="user-guess"></p>
+            <!--- displays underscores depending on word length -->
+            <h3>Cocktail to Guess:</h3>
+            <p id="underscores"> </p>
+
+            <h3> Guesses Left </h3>
+            <p id="guesses-left"></p>
+        </div>
+
+        <!--- displays wins/losses -->
+        <div class=winslosses>
+            <h3> Wins:</h3>
+            <p id="game-won"></p>
+
+            <h3>Losses:</h3>
+            <p id="game-lost"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p id="warning"> <strong>Warning:</strong> The consumption of alcohol may make you think you are whispering
+            when you are not.The consumption of alcohol may give you, and only you, the impression that every little
+            thought that enters your mind is absolutely brilliant and worth sharing and repeating several times
+            throughout the evening.</p>
+    </footer>
+
+    <!---Link to  javascript -->
+    <script src="./assets/javascript/newgame.js"></script>
+</body>
+
+</html>
