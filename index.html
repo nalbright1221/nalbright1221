@@ -5,51 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hangover Man</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Crystal Collector </title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="reset" type="reset/css" href="assets/css/reset.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1> Hang(over) Man</h1>
-            <h2> Guess that cocktail!</h2>
-            <button id="button" type="button">Click here to guess your drink</button>
-        </header>
-    </div>
+    <div class="body">
+        <!--game title -->
+        <h1> Crystal Collector</h1>
 
-    <div class="wrapper">
-        <!--- guesses let -->
-        <div class="content">
-            <h3>You've guessed </h3>
-            <p id="user-guess"></p>
-            <!--- displays underscores depending on word length -->
-            <h3>Cocktail to Guess:</h3>
-            <p id="underscores"> </p>
+        <!--random number chosen by computer -->
+        <strong>
+            <p id="result"></p>
+        </strong>
 
-            <h3> Guesses Left </h3>
-            <p id="guesses-left"></p>
+        <!-- current total -->
+        <p>Current Total:
+            <br>
+            <span id="current-total"></span>
+        </p>
+
+        <!--crystal  divs w/ images-->
+        <div class="crystals">
         </div>
 
-        <!--- displays wins/losses -->
-        <div class=winslosses>
-            <h3> Wins:</h3>
-            <p id="game-won"></p>
+        <!--users wins and losses -->
+        <p class="win">Wins: <br>
+            <span id="win"></span>
+        </p>
 
-            <h3>Losses:</h3>
-            <p id="game-lost"></p>
-        </div>
+        <p>Losses: <br>
+            <span id="loss"></span>
+        </p>
+
+        <!--game instructions-->
+        <p class="instructions">
+            You will be given a random number at the start of the game.
+            <br>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+            your
+            total score.
+            <br>You win the game by matching your total score to random number, you lose the game if your total score
+            goes
+            above the random number.
+            <br>The value of each crystal is hidden from you until you click on it.
+            <br>Each time when the game starts, the game will change the values of each crystal.
+        </p>
     </div>
 
-    <footer>
-        <p id="warning"> <strong>Warning:</strong> The consumption of alcohol may make you think you are whispering
-            when you are not.The consumption of alcohol may give you, and only you, the impression that every little
-            thought that enters your mind is absolutely brilliant and worth sharing and repeating several times
-            throughout the evening.</p>
-    </footer>
-
-    <!---Link to  javascript -->
-    <script src="./assets/javascript/newgame.js"></script>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>
