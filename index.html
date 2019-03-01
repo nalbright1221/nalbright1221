@@ -5,56 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Crystal Collector </title>
+    <title>Trivia Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="reset" type="reset/css" href="assets/css/reset.css">
+
 </head>
 
 <body>
     <div class="body">
         <!--game title -->
-        <h1> Crystal Collector</h1>
+        <h1>Trivia Game</h1>
 
-        <!--random number chosen by computer -->
-        <strong>
-            <p id="result"></p>
-        </strong>
+        <!-- button -->
+        <button type="button" id="start">Click to Start Game!</button>
 
-        <!-- current total -->
-        <p>Current Total:
-            <br>
-            <span id="current-total"></span>
+        <!-- show seconds  -->
+        <div id="timer"></div>
+        <p id="time">
+            <div id="seconds-remaining"></div>
         </p>
+    
 
-        <!--crystal  divs w/ images-->
-        <div class="crystals">
+        <div id="question-answers">
+        <h1 id="question"></h1>
+
+        <button type="button" class="answer" id="answer1"></button>
+        <button type="button" class="answer" id="answer2"></button>
+        <button type="button" class="answer" id="answer3"></button>
+        <button type="button" class="answer" id="answer4"></button>
         </div>
 
-        <!--users wins and losses -->
-        <p class="win">Wins: <br>
-            <span id="win"></span>
-        </p>
+        <div id="result"></div>
+        <div id="image"></div>
+        
+        <div id="correct-answer"></div>
 
-        <p>Losses: <br>
-            <span id="loss"></span>
-        </p>
-
-        <!--game instructions-->
-        <p class="instructions">
-            You will be given a random number at the start of the game.
-            <br>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
-            your
-            total score.
-            <br>You win the game by matching your total score to random number, you lose the game if your total score
-            goes
-            above the random number.
-            <br>The value of each crystal is hidden from you until you click on it.
-            <br>Each time when the game starts, the game will change the values of each crystal.
-        </p>
+        <div id="winsLosses">
+        <h2>
+            <div id='wins'></div>
+        </h2>
+        <h2>
+            <div id='losses'></div>
+        </h2>
+        <h2>
+            <div id='not-answered'></div>
+        </h2>
     </div>
 
-    <script src="./assets/javascript/game.js"></script>
+    </div>
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="./assets/javascript/app.js"></script>
+
 </body>
 
 </html>
