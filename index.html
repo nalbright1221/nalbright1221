@@ -5,59 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trivia Game</title>
+    <!--Ajax / jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Giffy Giddy </title>
+    <!--Links to js and css files-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 
 <body>
-    <div class="body">
-        <!--game title -->
-        <h1>Trivia Game</h1>
+    <h1>EMOTION GifTASTIC</h1>
 
-        <!-- button -->
-        <button type="button" id="start">Click to Start Game!</button>
-
-        <!-- show seconds  -->
-        <div id="timer"></div>
-        <p id="time">
-            <div id="seconds-remaining"></div>
-        </p>
-    
-
-        <div id="question-answers">
-        <h1 id="question"></h1>
-
-        <button type="button" class="answer" id="answer1"></button>
-        <button type="button" class="answer" id="answer2"></button>
-        <button type="button" class="answer" id="answer3"></button>
-        <button type="button" class="answer" id="answer4"></button>
-        </div>
-
-        <div id="result"></div>
-        <div id="image"></div>
-        
-        <div id="correct-answer"></div>
-
-        <div id="winsLosses">
-        <h2>
-            <div id='wins'></div>
-        </h2>
-        <h2>
-            <div id='losses'></div>
-        </h2>
-        <h2>
-            <div id='not-answered'></div>
-        </h2>
+    <div class="butttonSection">
+        <h2>Click a button to display your emotion! </h2>
+        <!--generated buttons appended here-->
+        <div id="buttons"></div>
     </div>
 
+    <!--form where user can enter their own value-->
+    <form class="search-parameters">
+        <h2>Add your emotion:</h2>
+        <input id="newEmotionButton" type="text" placeholder="Add a new emotion here!"> <br>
+        <input id="userSubmit" type="submit" value="Submit">
+    </form>
     </div>
 
-    <!-- Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script src="./assets/javascript/app.js"></script>
-
+    <!--generated gifs appended-->
+    <div id="gifSection">
+         <h2>GIFS</h2>
+    </div>
+     
+        <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
