@@ -1,94 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="full-height">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Ajax / jQuery CDN / Firebase / Moment.js References -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Train Schedule </title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Albright Portfolio</title>
 </head>
-
 <body>
+    
 
- <!-- Train Header -->
- <div class="container">
 
-        <!-- Jumbotron -->
-        <div class="jumbotron" style="background-color: rosybrown; color: white">
-          <h1 class="text-center">Anytime is Train Time!</h1>
-          <h3 class="text-center">Check Train Schedules Here</h3>
+  <html lang="en" class="full-height">
+
+    <!--Main Navigation-->
+    <header>
+    
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <a class="navbar-brand" href="#"><strong>Albright</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+    
+      
+    
+    </header>
+    <!--Main Navigation-->
+    
+    <!--Main Layout-->
+    <img src="./images/BACKGROUND.jpg" width = "100%" height = "100%">
+    <main class="text-center py-5">
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+    
+            <p class ="white-text"> Hi! My name is Nicole Albright and I am a student in the Case Western Reserve Coding Bootcamp. I recently graduated from Kent State University with a BA in Visual Communication Design.
+              A self-motivated, confident, and organized professional with continued drive to outperform expectations is looking to join the sales force of an organization that rewards success and has a reputation for integrity, outstanding customer service, and high-quality products.
 
-
- <!-- Current Train-->
- <div class="card mb-4">
-        <div class="card-header">Current Train Schedule</div>
-        <div class="card-body">
-          <table class="table table-sm table-hover" id='employee-table'>
-            <thead>
-              <tr>
-                <th scope="col">Train Name</th>
-                <th scope="col">Destination</th>
-                <th scope="col">Frequency (min)</th>
-                <th scope="col">Next Arrival</th>
-                <th scope="col">Minutes Away</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-        <div class="col-md-12">
-          <!-- Add Employee  -->
-          <div class="card mb-4">
-            <div class="card-header">Add a New Train!</div>
-            <div class="card-body">
-  
-              <!-- Entry Form -->
-              <form>
-                <div class="form-group">
-                  <label for="employee-name-input">Train Name</label>
-                  <input class="form-control" id="employee-name-input" placeholder="Train Name" type="text">
-                </div>
-                <div class="form-group">
-                  <label for="role-input">Destination</label>
-                  <input class="form-control" id="role-input" placeholder="Destination" type="text">
-                </div>
-                <div class="form-group">
-                  <label for="start-input">First Train Time (hh:mm - military time)</label>
-                  <input class="form-control" id="start-input" placeholder="24:00" type="text">
-                </div>
-                <div class="form-group">
-                  <label for="rate-input">Frequency (min)</label>
-                  <input class="form-control" id="rate-input" placeholder="60" type="text">
-                </div>
-                <button class="btn btn-primary float-right" id="add-employee-btn">Submit</button>
-              </form>
-  
-            </div>
+                Entry level Software Developer and experienced artist with a demonstrated history of working in the graphic design industry. 
+                
+                Coding experience includes front end development involving HTML, CSS, JavaScript and jQuery. I am skilled in Graphic Design concepts, Social Media Marketing, Adobe Creative Suite, Photography, Video Editing, Event Planning, Microsoft Office, Customer Service.</p>
+    
           </div>
         </div>
       </div>
-  
-    </div>
+    
+    </main>
 
-  
-
-
-
-    <script src="./assets/javascript/app.js"></script>
 </body>
-
 </html>
