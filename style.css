@@ -1,3 +1,21 @@
 body {
-    background: black;
+    margin: 100px;
+    background: white;
+    color: black;
 }
+
+.navBar {
+    top: 0;
+    width: 100%; 
+    position: fixed;
+    left: 0;
+}
+
+.headshot {
+   z-index: 0; 
+}
+
+.aboutMe { 
+    z-index: 5;
+}
+
